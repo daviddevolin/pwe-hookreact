@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AuthProvider, AuthContext } from "./AuthProvier";
 
-const UserProfile = () => {
+const UserName = () => {
   const [user, setUser] = useContext(AuthContext);
 
   return (
@@ -20,7 +20,7 @@ const Login = () => {
 
 const Main = () => {
   const [user] = useContext(AuthContext);
-  return user ? <UserProfile /> : <Login />;
+  return user ? <UserName /> : <Login />;
 };
 
 export default function App() {
